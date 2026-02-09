@@ -1,3 +1,6 @@
+# NFT_ERC20
+This repo implements a classic NFT that can only be minted by paying with a particular ERC20 token. It is a learning project, as part of the [Ultimate Solidity Course by Rareskills](https://rareskills.io/tutorials/learn-solidity).
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
