@@ -2,17 +2,18 @@
 pragma solidity ^0.8.13;
 
 import {Script} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import {MyNFT} from "../src/MyNFT.sol";
 
 contract CounterScript is Script {
-    Counter public counter;
+    MyNFT public myNFT;
 
     function setUp() public {}
 
     function run() public {
         vm.startBroadcast();
 
-        counter = new Counter();
+        address DAI = address(0x6B175474E89094C44Da98b954EedeAC495271d0F);
+        myNFT = new MyNFT("MyNFT", "MNFT", DAI);
 
         vm.stopBroadcast();
     }
